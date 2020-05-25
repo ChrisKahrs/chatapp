@@ -18,7 +18,7 @@ def index():
         username = reg_form.username.data
         password = reg_form.password.data
 
-        # check if username exists22
+        # check if username exists2233
         user_object = User.query.filter_by(username=username).first()
         if user_object:
             return "Someone else has this username!"
